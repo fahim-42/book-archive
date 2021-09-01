@@ -1,12 +1,16 @@
+//error-message
 let errorMessage = document.getElementById('error-message');
 errorMessage.style.display = 'none';
 
+//call using 'Search' button
 let searchBook = () => {
     let searchField = document.getElementById('input-field');
     let searchText = searchField.value;
 
+    // clear search field after button click
     searchField.value = '';
 
+    //error-message condition
     if (searchText === '') {
         errorMessage.style.display = 'block';
     }
@@ -22,11 +26,14 @@ let displaySearchResult = results => {
     // console.log(results);
     let searchResult = document.getElementById('search-result');
 
+    //clear old search-result 
     searchResult.textContent = '';
 
     results.forEach(result => {
         const div = document.createElement('div');
         div.classList.add('col');
+
+        //dynamic loading
         div.innerHTML = `
             <div class="card h-100">
                 <img src="https://covers.openlibrary.org/b/id/${result.cover_i}-M.jpg" class="card-img-top" alt="">
