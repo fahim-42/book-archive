@@ -30,11 +30,14 @@ let searchBook = () => {
 }
 
 let displaySearchResult = results => {
-    console.log(results);
     let searchResult = document.getElementById('search-result');
 
     // clear old search-result 
     searchResult.textContent = '';
+    
+    // total search result counter
+    totalSearch.style.display = 'block';
+    totalSearch.innerHTML = `<h5>search result found: ${results.length}</h5>`;
 
     // what-if no result found
     if (results.length === 0) {
@@ -44,7 +47,6 @@ let displaySearchResult = results => {
         results.forEach(result => {
             const div = document.createElement('div');
             div.classList.add('col');
-
             // dynamic loading
             div.innerHTML = `
                 <div class="card h-100 border border-dark border-2">
