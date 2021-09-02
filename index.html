@@ -21,19 +21,27 @@
             <button onclick="searchBook()" class="btn btn-outline-secondary" type="button"
                 id="button-addon2">Search</button>
         </div>
+        <!-- total-search-result counter -->
+        <h6 id="total-search" class="w-50 text-center mx-auto">
+
+        </h6>
     </header>
 
     <!-- display-search-result -->
     <section>
-        <!-- error-message -->
+        <!-- error-messages -->
         <div>
-            <h2 id="error-message" class="text-danger fw-bold text-center">Error, Please try again.</h2>
+            <h4 id="empty-field-error" class="text-danger fw-bold text-center">Please reload & write something to search.</h4>
         </div>
-        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+        <div>
+            <h4 id="no-result-error" class="text-danger fw-bold text-center">Error: No result Found.<br>Please reload & try again.</h4>
+        </div>
+
+        <!-- search-result -->
+        <div id="search-result" class="row row-cols-2 row-cols-md-4 g-5 m-4 rounded-3 shadow-lg">
            
         </div>
     </section>
-
 
 
     <!-- custom-js -->
