@@ -14,7 +14,9 @@
 <body>
     <header class="py-1 bg-light">
         <!-- search-bar -->
-        <h1 class="text-center mb-3">Book Archive</h1>
+        <h1 class="text-center mb-3 mt-1">
+            <span class="fw-light">BOOK </span>
+            <span class="fw-bolder fst-italic text-secondary">ARCHIVE</span></h1>
         <div class="input-group mb-3 w-50 mx-auto shadow-lg">
             <input id="input-field" type="text" class="form-control" placeholder="Search Book"
                 aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -31,15 +33,17 @@
     <section>
         <!-- error-messages -->
         <div>
-            <h4 id="empty-field-error" class="text-danger fw-bold text-center">Please reload & write something to search.</h4>
+            <h4 id="empty-field-error" class="text-danger fw-bold text-center">Please reload & write something to
+                search.</h4>
         </div>
         <div>
-            <h4 id="no-result-error" class="text-danger fw-bold text-center">Error: No result Found.<br>Please reload & try again.</h4>
+            <h4 id="no-result-error" class="text-danger fw-bold text-center">Error: No result Found.<br>Please reload &
+                try again.</h4>
         </div>
 
         <!-- search-result -->
         <div id="search-result" class="row row-cols-2 row-cols-md-4 g-5 m-4 rounded-3 shadow-lg">
-           
+
         </div>
     </section>
 

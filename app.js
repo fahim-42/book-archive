@@ -37,7 +37,7 @@ let displaySearchResult = results => {
     
     // total search result counter
     totalSearch.style.display = 'block';
-    totalSearch.innerHTML = `<h5>search result found: ${results.length}</h5>`;
+    totalSearch.innerHTML = `<h5 class="text-success fw-bold">Search result found: ${results.length}</h5>`;
 
     // what-if no result found
     if (results.length === 0) {
